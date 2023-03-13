@@ -4,5 +4,11 @@ import { methods as lenguajeControllers} from "../controllers/language.controlle
 const router=Router();
 
 router.get('/', lenguajeControllers.getLenguages)
+router.get('/:id', lenguajeControllers.getLenguage)
+router.post('/', lenguajeControllers.addLenguages)
+router.put('/:id', lenguajeControllers.updateLenguage)
+router.delete('/:id', lenguajeControllers.deleteLenguage)
+
+
 
 export default router;
